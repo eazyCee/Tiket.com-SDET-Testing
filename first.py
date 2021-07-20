@@ -20,15 +20,16 @@ time.sleep(2)
 destination.send_keys(Keys.RETURN)
 
 time.sleep(2)
-dateStart = driver.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[3]/div[3]/div[2]/div[2]/div[2]/div[1]/div[2]/div/div/div[2]/div/div/div[1]/div[2]/div[2]/div/div[2]/div/table/tbody/tr[4]/td[4]/div/span")
+dateStart = driver.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[3]/div[3]/div[2]/div[2]/div[2]/div[1]/div[2]/div/div/div[2]/div/div/div[1]/div[2]/div[2]/div/div[2]/div/table/tbody/tr[5]/td[4]/div/span")
 dateStart.location_once_scrolled_into_view
 dateStart.click()
 
-dateEnd = driver.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[3]/div[3]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div/div[2]/div/div/div[1]/div[2]/div[2]/div/div[2]/div/table/tbody/tr[5]/td[4]/div/span")
+dateEnd = driver.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[3]/div[3]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div/div[2]/div/div/div[1]/div[2]/div[2]/div/div[2]/div/table/tbody/tr[5]/td[7]/div/span")
 dateEnd.location_once_scrolled_into_view
 dateEnd.click()
 
 passenger = driver.find_element_by_xpath("/html/body/div[2]/div/div[2]/div[3]/div[3]/div[2]/div[2]/div[3]/div[2]/div/div/div[3]/div/span")
+passenger.location_once_scrolled_into_view
 passenger.click()
 time.sleep(2)
 
@@ -139,7 +140,7 @@ expiryYear = driver.find_element_by_xpath("/html/body/div[1]/div/div[3]/div[3]/d
 expiryYear.click()
 #Testing Input Passenger Data
 
-pay = driver.find_element_by_xpath("/html/body/div[1]/div/div[3]/div[3]/div/div[2]/div/div[1]/div/div[6]/button")
+pay = driver.find_element_by_css_selector(".v3-btn")
 pay.location_once_scrolled_into_view
 pay.click()
 
